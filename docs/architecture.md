@@ -1,9 +1,9 @@
 # System Architecture
 
 ## Overview
-DevOps Simulator follows a **microservices architecture** designed for **high availability**, **scalability**, and **rapid development iteration**.
+DevOps Simulator follows a **microservices architecture** designed for **high availability**, **scalability**, and **AI-assisted automation** across **Production**, **Development**, and **Experimental** environments.
 
-This document covers both **Production** and **Development** environments.
+This document covers all environments with emphasis on modernization, observability, and AI integration.
 
 ---
 
@@ -85,16 +85,54 @@ Includes experimental and hot-reload features.
 
 ---
 
-## ⚙️ Experimental Features
-> ⚠️ These are under active testing:
-- Multi-cloud deployment  
-- AI-powered log analysis  
-- Automatic rollback on anomaly detection  
+## 🧠 Experimental Architecture (AI-Enhanced)
+
+**Version**: 3.0.0-experimental  
+**Purpose**: Research & development of AI-powered deployment and scaling automation.
+
+### 1. Application Server (AI-Enhanced)
+- **Technology**: Node.js + Express + TensorFlow.js  
+- **Ports**: 9000 (main), 9001 (metrics), 9002 (AI API)  
+- **Scaling**: AI-powered predictive auto-scaling  
+- **Message Queue**: Apache Kafka for event-driven operations  
+
+### 2. Distributed Database Layer
+- **Primary**: PostgreSQL 14 cluster (5 nodes)  
+- **Cache**: Redis cluster with ML-based optimization  
+- **Configuration**: Multi-master replication  
+- **Backup**: Continuous backup with geo-redundancy  
+- **AI Features**: Query optimization, index suggestions  
+
+### 3. AI/ML Pipeline
+- **Frameworks**: TensorFlow, PyTorch, Scikit-learn  
+- **Models**:  
+  - Anomaly detection (LSTM neural network)  
+  - Load prediction (XGBoost)  
+  - Auto-scaling optimizer (Reinforcement Learning)  
+- **Training**: Continuous online learning  
+- **Inference**: Real-time (<50ms latency)  
+
+### 4. Multi-Cloud Orchestration
+- **Supported Clouds**: AWS, Azure, GCP, DigitalOcean  
+- **Orchestrator**: Kubernetes with custom CRDs  
+- **Load Balancing**: Global anycast + GeoDNS  
+- **Failover**: Automatic cross-cloud failover  
+
+### 5. Advanced Monitoring & Observability
+- **Metrics**: Prometheus + Thanos (long-term storage)  
+- **Logs**: ELK Stack + AI log analysis  
+- **Alerts**: Predictive alerting and anomaly detection  
+
+### 6. Chaos Engineering
+- **Tooling**: Chaos Mesh / Gremlin  
+- **Purpose**: Validate system resilience under failure  
 
 ---
 
 ## Summary
-| Environment | Port | Scaling | Monitoring | Deployment | Security |
-|--------------|------|----------|-------------|-------------|-----------|
-| Production   | 8080 | Auto     | Prometheus + Grafana | Rolling Updates | TLS + Audits |
-| Development  | 3000 | Manual   | Console + Prometheus | Docker Compose | Debug + CORS |
+
+| Environment   | Port(s)     | Scaling         | Monitoring             | Deployment         | Security                |
+|----------------|-------------|------------------|------------------------|--------------------|--------------------------|
+| Production     | 8080        | Auto (K8s)       | Prometheus + Grafana   | Rolling Updates    | TLS + Audits             |
+| Development    | 3000        | Manual           | Console + Prometheus   | Docker Compose     | Debug + CORS             |
+| Experimental   | 9000–9002   | AI-Predictive    | Prometheus + Thanos    | Multi-Cloud (AI)   | Zero-Trust + AI Defense  |
