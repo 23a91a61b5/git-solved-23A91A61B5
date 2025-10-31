@@ -1,0 +1,4 @@
+instructor	https://github.com/23a91a61b5/git-solved-23A91A61B5.git (fetch)
+instructor	https://github.com/23a91a61b5/git-solved-23A91A61B5.git (push)
+origin	https://github.com/23a91a61b5/git-solved-23A91A61B5.git (fetch)
+origin	https://github.com/23a91a61b5/git-solved-23A91A61B5.git (push)
