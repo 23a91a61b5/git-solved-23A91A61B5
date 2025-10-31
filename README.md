@@ -40,3 +40,4 @@ A comprehensive CI/CD configuration management tool for enterprise deployments w
    ```bash
    ./scripts/deploy.sh
 "## FAQ" 
+"update" 
